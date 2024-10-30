@@ -4,7 +4,8 @@ import type {PayloadAction} from "@reduxjs/toolkit"
 
 const initialState = {
   activeId: 1,
-  progressId: 1
+  progressId: 1,
+  testIsActive: false,
 };
 
 const activeQuestionSlice = createSlice({
@@ -18,6 +19,9 @@ const activeQuestionSlice = createSlice({
       state.progressId += 1;
       state.activeId = state.progressId;
     },
+    setIsActiveTest (state, action: PayloadAction<boolean>) {
+      state.testIsActive = action.payload;
+    }
   },
   extraReducers: (builder) => {
     builder.addCase(PURGE, () => {
@@ -26,5 +30,5 @@ const activeQuestionSlice = createSlice({
   },
 });
 
-export const { setActiveQuestionId, setNextQuestionId } = activeQuestionSlice.actions;
+export const { setActiveQuestionId, setNextQuestionId, setIsActiveTest } = activeQuestionSlice.actions;
 export default activeQuestionSlice.reducer;

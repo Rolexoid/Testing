@@ -1,10 +1,12 @@
 import { Table } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { test } from '../data/index.js';
 import { persistor } from '../slices/index.js';
 import type { RootState } from '../slices';
+import { setIsActiveTest } from '../slices/activeQuestionSlice'
 
 const Results = () => {
+  const dispatch = useDispatch();
   const answersObj = useSelector((state: RootState) => state.answers);
   const { answers } = answersObj;
   return (
@@ -33,7 +35,10 @@ const Results = () => {
     <button
       type="submit"
       className="w-20 mt-2 btn button"
-      onClick={() => persistor.purge()}
+      onClick={() => {
+        persistor.purge();
+        dispatch(setIsActiveTest(false))
+      }}
     >Пройти тест еще раз</button>
     </div>
   )
