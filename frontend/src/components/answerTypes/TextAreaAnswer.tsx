@@ -4,7 +4,7 @@ import { Form } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import { setNextQuestionId } from '../../slices/activeQuestionSlice.ts'
 import { setAnswer } from '../../slices/answerSlice.ts'
-import type { Props, FormValue } from '../../types';
+import type { Props, FormValue } from '../../types'
 
 const TextAreaAnswer = (props: Props) => {
 	const { question, id, progressId } = props;

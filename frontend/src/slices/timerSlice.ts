@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { PURGE } from "redux-persist";
+import { createSlice } from '@reduxjs/toolkit'
+import { PURGE } from "redux-persist"
 import type {PayloadAction} from "@reduxjs/toolkit"
 import { timer } from '../data/index'
 

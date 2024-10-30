@@ -1,8 +1,8 @@
-import TextAnswer from './TextAnswer';
-import TextAreaAnswer from './TextAreaAnswer';
-import CheckboxAnswer from './CheckBoxAnswer';
-import RadioAnswer from './RadioAnswer';
-import { ComponentProps } from 'react';
+import TextAnswer from './TextAnswer'
+import TextAreaAnswer from './TextAreaAnswer'
+import CheckboxAnswer from './CheckBoxAnswer'
+import RadioAnswer from './RadioAnswer'
+import { ComponentProps } from 'react'
 
 type AnswerTypes = { [key: string]: (props: ComponentProps<typeof TextAnswer>) => JSX.Element };
 

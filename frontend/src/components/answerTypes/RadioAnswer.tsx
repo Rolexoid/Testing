@@ -1,9 +1,9 @@
-import { Formik, Field } from 'formik';
-import { Form } from 'react-bootstrap';
-import { useDispatch } from 'react-redux';
-import { setNextQuestionId } from '../../slices/activeQuestionSlice.js';
-import { setAnswer } from '../../slices/answerSlice.js';
-import type { Props, FormValue } from '../../types';
+import { Formik, Field } from 'formik'
+import { Form } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
+import { setNextQuestionId } from '../../slices/activeQuestionSlice.ts'
+import { setAnswer } from '../../slices/answerSlice.ts'
+import type { Props, FormValue } from '../../types'
 
 const RadioAnswer = (props: Props) => {
 	const { question, options, id, progressId } = props;

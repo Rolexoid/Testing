@@ -1,7 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { PURGE } from "redux-persist";
+import { createSlice } from '@reduxjs/toolkit'
+import { PURGE } from "redux-persist"
 import type { PayloadAction } from "@reduxjs/toolkit"
-import type { Answer, AnswerState } from '../types';
+import type { Answer, AnswerState } from '../types'
 
 const initialState: AnswerState = {
   answers: [],

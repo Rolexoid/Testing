@@ -1,8 +1,8 @@
-import { Table } from 'react-bootstrap';
-import { useSelector, useDispatch } from 'react-redux';
-import { test } from '../data/index.js';
-import { persistor } from '../slices/index.js';
-import type { RootState } from '../slices';
+import { Table } from 'react-bootstrap'
+import { useSelector, useDispatch } from 'react-redux'
+import { test } from '../data/index.js'
+import { persistor } from '../slices/index.ts'
+import type { RootState } from '../slices'
 import { setIsActiveTest } from '../slices/activeQuestionSlice'
 
 const Results = () => {

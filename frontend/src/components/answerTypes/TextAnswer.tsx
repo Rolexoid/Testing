@@ -1,10 +1,10 @@
-import { useRef, useEffect } from 'react';
-import { Formik } from 'formik';
-import { Form } from 'react-bootstrap';
-import { useDispatch } from 'react-redux';
-import { setNextQuestionId } from '../../slices/activeQuestionSlice.js';
-import { setAnswer } from '../../slices/answerSlice.js';
-import type { Props, FormValue } from '../../types';
+import { useRef, useEffect } from 'react'
+import { Formik } from 'formik'
+import { Form } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
+import { setNextQuestionId } from '../../slices/activeQuestionSlice.ts'
+import { setAnswer } from '../../slices/answerSlice.ts'
+import type { Props, FormValue } from '../../types'
 
 const TextAnswer = (props: Props) => {
   const { question, id, progressId } = props;
