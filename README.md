@@ -5,5 +5,5 @@ Answer all questions correctly in this physics test! Click [here](https://test-l
 * Nodejs v21.0.0
 * npm v10.2.0
 ### Setup:
-make install
+make install 
 make build
