@@ -39,7 +39,7 @@ const Test = () => {
 
 
   return (
-    <div className='container my-3 justify-content-start'>
+    <div className='bg-white test-container justify-content-start relative-position z-1'>
       <div className='row'>
         <div className='col-md-auto'>
           <h1>Тестирование</h1>

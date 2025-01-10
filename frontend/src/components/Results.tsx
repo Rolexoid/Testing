@@ -10,7 +10,7 @@ const Results = () => {
   const answersObj = useSelector((state: RootState) => state.answers);
   const { answers } = answersObj;
   return (
-    <div className='container mt-5'>
+    <div className='container mt-5 relative-position z-1'>
     <Table striped bordered hover>
       <thead>
         <tr>

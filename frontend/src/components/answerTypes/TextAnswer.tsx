@@ -42,7 +42,7 @@ const TextAnswer = (props: Props) => {
           />
           <button
             type="submit"
-            className="w-20 mt-2 btn button"
+            className="button"
             disabled={values.answer.length===0}
           >Отправить</button>
         </Form>
