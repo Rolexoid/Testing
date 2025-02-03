@@ -39,12 +39,10 @@ const Test = () => {
 
 
   return (
-    <div className='bg-white test-container justify-content-start relative-position z-1'>
-      <div className='row'>
-        <div className='col-md-auto'>
-          <h1>Тестирование</h1>
-        </div>
-        <div className='col-md-auto d-flex justify-content-left align-items-center fs-4 border border-dark my-2'>
+    <div className='bg-white flex-container test-container relative-position z-1'>
+      <div className='flex-container'>
+        <h1>Тестирование</h1>
+        <div className='time-container'>
           {minutesString}:{secondsString}
         </div>
       </div>
@@ -53,16 +51,8 @@ const Test = () => {
           <button className={setClasses(problem.id)} key={problem.id} disabled={problem.id > progressId} onClick={() => dispatch(setActiveQuestionId(problem.id))}></button>
         ))}
       </Stack>
-      <div className='w-100 mt-3'>
-        <div className='d-flex flex-column h-100'>
-          <div className='container-fluid h-100'>
-            <div className='row h-100'>
-              <div className='col-12 col-md-8 col-xxl-6'>
-                {activeQuestion ? renderQuestion(activeQuestion, progressId) : <Spinner animation="border" />}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className='question-container'>
+        {activeQuestion ? renderQuestion(activeQuestion, progressId) : <Spinner animation="border" />}
       </div>
     </div>
   ); 
